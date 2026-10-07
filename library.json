@@ -1,0 +1,12 @@
+{
+    "id": "{EAF4DA61-DD33-487D-9A35-4255273403D9}",
+    "author": "Thomas Schnittcher",
+    "name": "Batrium",
+    "url": "",
+    "version": "1.0",
+    "build": 1,
+    "date": 0,
+    "compatibility": {
+        "version": "6.0"
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "elements": [
+        {
+            "type": "NumberSpinner",
+            "name": "Banks",
+            "caption": "Anzahl Batteriebänke",
+            "minimum": 1,
+            "maximum": 16
+        },
+        {
+            "type": "NumberSpinner",
+            "name": "CellsPerBank",
+            "caption": "Zellen je Bank",
+            "minimum": 1,
+            "maximum": 32
+        },
+        {
+            "type": "CheckBox",
+            "name": "CreateCellVars",
+            "caption": "Variablen für Einzelzellen anlegen (Spannung, Temperatur, Status)"
+        },
+        {
+            "type": "ValidationTextBox",
+            "name": "SystemID",
+            "caption": "System-ID filtern (8 Hex-Zeichen, leer = alle). Wird in der Variable 'System-Kennung' angezeigt.",
+            "validate": "^([0-9A-Fa-f]{8})?$"
+        },
+        {
+            "type": "NumberSpinner",
+            "name": "WatchdogSec",
+            "caption": "Verbindung offline nach (Sekunden ohne Daten)",
+            "minimum": 5,
+            "maximum": 600
+        },
+        {
+            "type": "CheckBox",
+            "name": "Debug",
+            "caption": "Debug-Ausgabe (Rohdaten, nur zur Fehlersuche)"
+        }
+    ],
+    "actions": [],
+    "status": [
+        { "code": 102, "icon": "active", "caption": "Aktiv" },
+        { "code": 104, "icon": "inactive", "caption": "Inaktiv" }
+    ]
+}
